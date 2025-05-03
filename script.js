@@ -1,3 +1,17 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Create hamburger menu dynamically
+    const menuIcon = document.createElement('div');
+    menuIcon.className = 'menu-icon';
+    menuIcon.innerHTML = '<span></span><span></span><span></span>';
+    document.body.appendChild(menuIcon);
+
+    // Toggle menu
+    menuIcon.addEventListener('click', () => {
+        menuIcon.classList.toggle('active');
+        document.querySelector('article').classList.toggle('active');
+    });
+});
+
 // Tab switching functionality
 function switchTab(tabName, selectionName) {
     document.querySelectorAll('.tab-content').forEach(tab => {
@@ -177,7 +191,7 @@ async function convert(type, direction) {
             'square-feet': 0.092903
         };
         const valueInSquareMeters = fromValue * areaFactors[fromUnit];
-        result = valueInSquareMeters / areaFactors[toUnit];
+        result. = valueInSquareMeters / areaFactors[toUnit];
     }
 
     // Currency Conversion (Fixed with real-time rates)
