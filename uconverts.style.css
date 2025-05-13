@@ -531,7 +531,9 @@ a {
     letter-spacing: 0.6px;
     color: #666;
 }
-
+span{
+    color: orange;
+}
 .main-welcome {
     font-size: 18px;
     color: orange;

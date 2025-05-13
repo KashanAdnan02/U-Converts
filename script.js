@@ -191,7 +191,7 @@ async function convert(type, direction) {
             'square-feet': 0.092903
         };
         const valueInSquareMeters = fromValue * areaFactors[fromUnit];
-        result. = valueInSquareMeters / areaFactors[toUnit];
+        result = valueInSquareMeters / areaFactors[toUnit];
     }
 
     // Currency Conversion (Fixed with real-time rates)
@@ -208,7 +208,7 @@ async function convert(type, direction) {
             mph: 0.621371,
             ms: 0.277778
         };
-        
+
         const valueInKmh = fromValue * speedFactors[toUnit];
         result = valueInKmh;
     }
